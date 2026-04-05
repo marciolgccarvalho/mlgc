@@ -1,19 +1,15 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.logo {
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: #f8fafc;
   color: #1e293b;
+  line-height: 1.6;
 }
 
 /* CONTAINER */
@@ -30,6 +26,7 @@ body {
 /* HEADER */
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
   background: #0f172a;
   padding: 15px 0;
@@ -42,54 +39,86 @@ body {
   align-items: center;
 }
 
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
+/* LOGO */
+.header .logo {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
 }
 
+/* MENU */
+nav a {
+  color: #ffffff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* BOTÃO MENU */
 .cta {
   background: #3b82f6;
-  padding: 8px 15px;
+  padding: 8px 16px;
   border-radius: 20px;
 }
 
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #0f172a, #1e40af);
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 140px 20px 80px;
 }
 
 .hero h1 {
   font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .hero p {
   max-width: 600px;
-  margin: 20px auto;
+  margin: auto;
+  font-size: 1.05rem;
 }
 
-/* BUTTONS */
+/* BOTÕES */
+.buttons {
+  margin-top: 30px;
+}
+
 .btn {
   padding: 12px 25px;
   border-radius: 30px;
   text-decoration: none;
   margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .primary {
   background: #3b82f6;
-  color: white;
+  color: #ffffff;
+}
+
+.primary:hover {
+  opacity: 0.9;
 }
 
 .secondary {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-/* SECTIONS */
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* SEÇÕES */
 .section {
   padding: 80px 0;
 }
@@ -100,8 +129,14 @@ nav a {
 
 .dark {
   background: #0f172a;
-  color: white;
+  color: #ffffff;
   text-align: center;
+}
+
+/* TITULOS */
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 /* GRID */
@@ -111,11 +146,13 @@ nav a {
   gap: 25px;
 }
 
+/* CARDS */
 .card {
-  background: white;
+  background: #ffffff;
   padding: 25px;
   border-radius: 12px;
   transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .card:hover {
@@ -128,6 +165,7 @@ iframe {
   height: 280px;
   margin-top: 15px;
   border-radius: 8px;
+  border: none;
 }
 
 /* CONTACT */
@@ -137,34 +175,62 @@ iframe {
   gap: 40px;
 }
 
+/* WHATSAPP */
 .whatsapp {
   display: inline-block;
   background: #22c55e;
-  color: white;
+  color: #ffffff;
   padding: 12px 20px;
   margin-top: 20px;
   border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  opacity: 0.9;
 }
 
 /* FORM */
-input, textarea {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  font-family: inherit;
 }
 
 button {
   background: #3b82f6;
-  color: white;
+  color: #ffffff;
   padding: 12px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -174,6 +240,6 @@ button {
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
