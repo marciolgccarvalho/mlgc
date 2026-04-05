@@ -1,12 +1,14 @@
 :root {
   --navy: #071633;
   --navy-2: #0b2c6f;
+  --navy-3: #0a1f49;
   --gold: #f3c623;
   --gold-2: #d4a514;
   --white: #ffffff;
   --text: #18253a;
   --muted: #5b6678;
   --bg: #f6f8fc;
+  --bg-soft: #eef3fb;
   --card: #ffffff;
   --shadow: 0 12px 40px rgba(8, 20, 47, 0.16);
 }
@@ -56,7 +58,7 @@ a {
 }
 
 .nav {
-  min-height: 82px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,27 +68,27 @@ a {
 
 /* LOGO */
 .logo {
+  display: inline-block;
   color: var(--white);
   font-size: 2rem;
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.02em;
-  display: inline-block;
 }
 
 .logo span {
   color: var(--gold);
 }
 
-/* BOTÃO MENU */
+/* BOTÃO HAMBÚRGUER */
 .menu-toggle {
   display: none;
   border: 0;
   background: transparent;
   color: var(--white);
   font-size: 2.2rem;
-  cursor: pointer;
   line-height: 1;
+  cursor: pointer;
 }
 
 /* MENU DESKTOP */
@@ -227,11 +229,11 @@ a {
 }
 
 .section.gray {
-  background: #eef3fb;
+  background: var(--bg-soft);
 }
 
 .section.dark {
-  background: linear-gradient(135deg, var(--navy), #0c2250);
+  background: linear-gradient(135deg, var(--navy), var(--navy-3));
   color: var(--white);
   text-align: center;
 }
@@ -358,14 +360,14 @@ footer {
 @media (max-width: 768px) {
   .nav {
     min-height: 78px;
-    padding: 0 6px;
+    padding: 0 2px 0 14px;
   }
 
   .logo {
     font-size: 1.5rem;
     line-height: 0.95;
-    margin-left: 6px;
     max-width: 190px;
+    margin-left: 4px;
   }
 
   .menu-toggle {
@@ -374,8 +376,9 @@ footer {
     justify-content: center;
     z-index: 1001;
     margin-left: auto;
-    margin-right: 6px;
-    font-size: 2.4rem;
+    margin-right: -6px;
+    font-size: 2.5rem;
+    padding: 6px 2px 6px 20px;
   }
 
   .menu {
