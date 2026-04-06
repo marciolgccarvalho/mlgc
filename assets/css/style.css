@@ -712,3 +712,29 @@ footer {
   font-size: 0.95rem;
   letter-spacing: 0.5px;
 }
+/* ================= INFO CONTATO ================= */
+
+.contato-info {
+  margin-top: 20px;
+}
+
+.contato-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.contato-info i {
+  color: #f3c623;
+}
+
+.contato-info a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contato-info a:hover {
+  color: #0b2c6f;
+}
