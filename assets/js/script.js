@@ -60,3 +60,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
+
+
+// ================= FORMULÁRIO CONTATO =================
+
+const form = document.getElementById("form-contato");
+const status = document.getElementById("form-status");
+
+if (form) {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    status.innerHTML = "Enviando...";
+    status.style.color = "#ccc";
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        status.innerHTML = "✅ Mensagem enviada com sucesso!";
+        status.style.color = "#22c55e";
+        form.reset();
+      } else {
+        status.innerHTML = "❌ Erro ao enviar. Tente novamente.";
+        status.style.color = "#ef4444";
+      }
+    } catch (error) {
+      status.innerHTML = "❌ Erro de conexão.";
+      status.style.color = "#ef4444";
+    }
+  });
+}
