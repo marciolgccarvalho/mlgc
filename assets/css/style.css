@@ -490,3 +490,8 @@ footer {
   font-size: 14px;
   color: #555;
 }
+.highlight {
+  font-weight: 600;
+  color: #0f2a4a;
+  margin-bottom: 20px;
+}
