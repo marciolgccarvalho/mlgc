@@ -231,40 +231,62 @@
 
   </div>
 </section>
-  <!-- ================= CONTATO ================= -->
-<div class="contato-texto">
-  <h2>Contato</h2>
-  <p>Disponível para projetos e parcerias em dados e BI.</p>
+ <!-- ================= CONTATO ================= -->
+<section id="contato" class="section contato-section">
+  <div class="container">
+    <div class="contato-wrapper">
 
-  <a href="https://wa.me/5551984926002" class="whatsapp">
-    Falar no WhatsApp
-  </a>
+      <!-- LADO ESQUERDO -->
+      <div class="contato-info-box">
+        <span class="contato-tag">Contato</span>
+        <h2>Vamos conversar</h2>
 
-  <div class="contato-info">
-    <a href="mailto:marcio.lgc@outlook.com" class="contato-item">
-      <i class="fas fa-envelope"></i>
-      <span>marcio.lgc@outlook.com</span>
-    </a>
+        <p class="contato-desc">
+          Estou disponível para oportunidades, projetos e parcerias em Business Intelligence,
+          dados, controladoria e performance comercial.
+        </p>
 
-    <a
-      href="https://www.linkedin.com/in/marciolgcarvalho"
-      target="_blank"
-      class="contato-item"
-    >
-      <i class="fab fa-linkedin"></i>
-      <span>linkedin.com/in/marciolgcarvalho</span>
-    </a>
-  </div>
-</div>
+        <div class="contato-canais">
+          <a href="https://wa.me/5551984926002" class="contato-link whatsapp-link" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Falar no WhatsApp</span>
+          </a>
 
-    <!-- FORMULÁRIO (MANTIDO) -->
-    <form action="https://formspree.io/f/SEUFORM" method="POST">
-      <input type="text" name="nome" placeholder="Nome" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+          <a href="mailto:marcio.lgc@outlook.com" class="contato-link">
+            <i class="fas fa-envelope"></i>
+            <span>marcio.lgc@outlook.com</span>
+          </a>
 
+          <a href="https://www.linkedin.com/in/marciolgcarvalho" class="contato-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/marciolgcarvalho</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO / FORMULÁRIO -->
+      <div class="contato-form-box">
+        <form action="https://formspree.io/f/SEUFORM" method="POST" class="contato-form">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar mensagem</button>
+        </form>
+      </div>
+
+    </div>
   </div>
 </section>
 
