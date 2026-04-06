@@ -310,6 +310,7 @@ p + p {
 .sobre-texto p {
   font-size: 1.03rem;
   color: var(--text);
+  text-align: justify;
 }
 
 .sobre-texto strong {
@@ -504,8 +505,8 @@ footer {
    MOBILE
    ========================================================= */
 @media (max-width: 768px) {
-  :root {
-    --header-height: 78px;
+  .sobre-texto p {
+    text-align: left;
   }
 
   .header {
