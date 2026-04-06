@@ -1021,3 +1021,25 @@ footer {
   transform: translateY(-2px);
   opacity: 1;
 }
+
+.hero-cv {
+  margin-top: 25px;
+}
+
+.btn-cv {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+  background: var(--gold);
+  color: #0b1f3a;
+  transform: translateY(-2px);
+}
