@@ -270,9 +270,9 @@
         </div>
       </div>
 
-     <!-- LADO DIREITO / FORMULÁRIO -->
+    <!-- LADO DIREITO / FORMULÁRIO -->
 <div class="contato-form-box">
-  <form action="https://formspree.io/f/mnjoldry" method="POST" class="contato-form">
+  <form id="form-contato" action="https://formspree.io/f/mnjoldry" method="POST" class="contato-form">
 
     <!-- Configuração -->
     <input type="hidden" name="_subject" value="Novo contato do portfólio" />
@@ -317,6 +317,9 @@
     <button type="submit" class="btn-enviar">
       Enviar mensagem
     </button>
+
+    <!-- Status -->
+    <p id="form-status"></p>
 
   </form>
 </div>
