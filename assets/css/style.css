@@ -302,60 +302,31 @@ p + p {
 /* =========================================================
    SOBRE
    ========================================================= */
-.section-sobre {
-  background: var(--bg);
-}
 
-.sobre-content {
+.section-sobre .sobre-content {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
-  gap: 36px;
+  grid-template-columns: minmax(320px, 1.1fr) minmax(320px, 0.9fr);
+  gap: 40px;
   align-items: start;
-  margin-top: 24px;
 }
 
-.sobre-texto {
-  max-width: 100%;
+.section-sobre .sobre-texto {
+  width: 100%;
 }
 
-.sobre-texto p {
-  font-size: 1.03rem;
-  color: var(--text);
-  text-align: justify;
+.section-sobre .sobre-texto p {
+  margin-bottom: 22px;
 }
 
-.sobre-texto strong {
-  font-weight: 800;
+.section-sobre .sobre-acoes {
+  margin-top: 26px;
 }
 
-.sobre-cards {
+.section-sobre .sobre-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.info-card {
-  background: var(--card);
-  border-radius: var(--radius-lg);
-  padding: 24px 22px;
-  box-shadow: 0 8px 26px rgba(8, 20, 47, 0.08);
-  min-height: 168px;
-}
-
-.info-card i {
-  font-size: 1.55rem;
-  color: var(--gold);
-  margin-bottom: 14px;
-}
-
-.info-card h3 {
-  font-size: 1.15rem;
-  margin-bottom: 8px;
-}
-
-.info-card p {
-  color: var(--muted);
-  font-size: 0.98rem;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 20px;
+  align-self: start;
 }
 
 /* =========================================================
@@ -1047,4 +1018,44 @@ footer {
 
 .sobre-acoes {
   margin-top: 20px;
+}
+
+
+/* Botão currículo na seção Sobre */
+.section-sobre .btn-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.section-sobre .btn-cv:hover {
+  background: var(--gold);
+  color: #0b1f3a;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .section-sobre .sobre-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .section-sobre .sobre-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-sobre .sobre-cards {
+    grid-template-columns: 1fr;
+  }
 }
