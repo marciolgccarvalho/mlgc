@@ -495,3 +495,32 @@ footer {
   color: #0f2a4a;
   margin-bottom: 20px;
 }
+
+.sobre-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre-texto {
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .sobre-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .sobre-texto {
+    max-width: 100%;
+  }
+
+  .sobre-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
