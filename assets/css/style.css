@@ -672,3 +672,34 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 18px 38px rgba(8, 20, 47, 0.14);
 }
+
+/* ================= HOVER PROFISSIONAL ================= */
+
+.destaque-card {
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.destaque-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(8, 20, 47, 0.14);
+}
+
+/* ÍCONE */
+.destaque-card i {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.destaque-card:hover i {
+  transform: scale(1.1);
+  color: #f3c623; /* sua cor */
+}
+
+/* TÍTULO */
+.destaque-card h3 {
+  transition: color 0.25s ease;
+}
+
+.destaque-card:hover h3 {
+  color: #0b2c6f;
+}
