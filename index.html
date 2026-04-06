@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcio Carvalho | BI & Data Strategy</title>
-  <meta
-    name="description"
-    content="Especialista em BI, SQL e dados financeiros. Transformo dados em decisões estratégicas."
-  />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcio Carvalho | BI</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="nav-shell">
-      <a href="#topo" class="logo">Marcio <span>Carvalho</span></a>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav">
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-
-      <nav class="menu" aria-label="Menu principal">
-        <a href="#sobre">Sobre</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#portfolio">Projetos</a>
-        <a href="#contato" class="cta">Contato</a>
-      </nav>
+    <div class="logo">
+      Marcio <span>Carvalho</span>
     </div>
-  </header>
 
-  <div class="menu-overlay"></div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato" class="btn-menu">Contato</a></li>
+      </ul>
+    </nav>
 
-  <main id="topo">
-    <section class="hero">
-      <div class="container">
-      <h2>BI estratégico para performance financeira e crescimento comercial</h2>
+  </div>
+</header>
 
-<p>
-  Especialista em dados financeiros e comerciais, atuo na construção de dashboards e soluções analíticas
-  para controle de DRE, acompanhamento de metas e análise de desempenho de vendas,
-  apoiando decisões estratégicas e geração de resultados.
-</p>
+<!-- ================= HERO ================= -->
+<section class="hero" id="topo">
+  <div class="container hero-content">
 
-<div class="buttons">
-  <a href="#portfolio" class="btn primary">Ver projetos</a>
-  <a href="#contato" class="btn secondary">Vamos conversar</a>
-</div>
-    </section>
+    <h1>BI estratégico para performance financeira e crescimento comercial</h1>
 
- <section class="sobre">
+    <p>
+      Transformo dados em decisões estratégicas, com foco em controle financeiro,
+      metas comerciais e geração de resultados.
+    </p>
+
+    <div class="buttons">
+      <a href="#projetos" class="btn primary">Ver projetos</a>
+      <a href="#contato" class="btn secondary">Vamos conversar</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="sobre" id="sobre">
   <div class="container">
 
     <h2>Sobre</h2>
 
     <div class="sobre-content">
 
+      <!-- TEXTO -->
       <div class="sobre-texto">
         <p>
-  Profissional de Business Intelligence com
-  <strong>+15 anos de experiência | BI | Controladoria | Performance Comercial</strong>,
-  atuando na transformação de informações em suporte estratégico para tomada de decisão.
-</p>
+          Profissional de Business Intelligence com 
+          <strong>+15 anos de experiência | BI | Controladoria | Performance Comercial</strong>,
+          atuando na transformação de informações em suporte estratégico para tomada de decisão.
+        </p>
 
         <p>
           Experiência sólida em controladoria, análise de desempenho e acompanhamento de resultados,
@@ -75,30 +75,31 @@
         </p>
       </div>
 
+      <!-- CARDS -->
       <div class="sobre-cards">
 
         <div class="card">
           <i class="fas fa-chart-line"></i>
           <h3>Performance</h3>
-          <p>Gestão de indicadores financeiros e comerciais</p>
+          <p>Indicadores financeiros e comerciais</p>
         </div>
 
         <div class="card">
           <i class="fas fa-database"></i>
           <h3>Dados</h3>
-          <p>Modelagem, SQL e integração de dados</p>
+          <p>Modelagem, SQL e integração</p>
         </div>
 
         <div class="card">
           <i class="fas fa-bullseye"></i>
           <h3>Metas</h3>
-          <p>Acompanhamento de metas e resultados</p>
+          <p>Acompanhamento de resultados</p>
         </div>
 
         <div class="card">
           <i class="fas fa-lightbulb"></i>
           <h3>Decisão</h3>
-          <p>Insights estratégicos para o negócio</p>
+          <p>Insights estratégicos</p>
         </div>
 
       </div>
@@ -107,90 +108,35 @@
   </div>
 </section>
 
-    <section id="solucoes" class="section gray">
-      <div class="container">
-        <h2>Soluções</h2>
-
-        <div class="grid">
-          <article class="card">
-            <h3>Dashboards estratégicos</h3>
-            <p>Indicadores financeiros e comerciais com foco em decisão.</p>
-          </article>
-
-          <article class="card">
-            <h3>Modelagem de dados</h3>
-            <p>Estruturação analítica com SQL e boas práticas.</p>
-          </article>
-
-          <article class="card">
-            <h3>Integração de dados</h3>
-            <p>Automação e pipelines com Azure Data Factory.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section">
-      <div class="container">
-        <h2>Projetos</h2>
-
-        <div class="grid">
-          <article class="card">
-            <h3>Dashboard Financeiro</h3>
-            <p>DRE, custos e indicadores estratégicos.</p>
-            <iframe src="" title="Projeto Financeiro"></iframe>
-          </article>
-
-          <article class="card">
-            <h3>Performance Comercial</h3>
-            <p>Metas, vendas e análise de desempenho.</p>
-            <iframe src="" title="Projeto Comercial"></iframe>
-          </article>
-
-          <article class="card">
-            <h3>Análise Executiva</h3>
-            <p>Indicadores estratégicos para tomada de decisão.</p>
-            <iframe src="" title="Projeto Executivo"></iframe>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark">
-      <div class="container small">
-        <h2>Diferencial</h2>
-        <p>
-          Experiência que combina dados, finanças e negócio.
-          Não apenas visualização, mas suporte real à decisão estratégica.
-        </p>
-      </div>
-    </section>
-
-    <section id="contato" class="section">
-      <div class="container contact">
-        <div>
-          <h2>Contato</h2>
-          <p>Disponível para projetos e parcerias em dados e BI.</p>
-
-          <a href="https://wa.me/55SEUNUMERO" class="whatsapp">
-            Falar no WhatsApp
-          </a>
-        </div>
-
-        <form action="https://formspree.io/f/SEUFORM" method="POST">
-          <input type="text" name="nome" placeholder="Nome" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contato">
+  <div class="container">
     <p>© 2026 Marcio Carvalho</p>
-  </footer>
+  </div>
+</footer>
 
-  <script src="assets/js/script.js"></script>
+<!-- ================= BOTÃO TOPO ================= -->
+<button id="btnTopo"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  const btn = document.getElementById("btnTopo");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 300) {
+      btn.style.display = "flex";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
 </body>
 </html>
