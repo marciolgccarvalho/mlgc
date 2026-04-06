@@ -987,3 +987,26 @@ footer {
     min-height: 170px;
   }
 }
+
+.skills-logos {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.skills-logos img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(10%);
+  opacity: 0.95;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.skills-logos img:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
