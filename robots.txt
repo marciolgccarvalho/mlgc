@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mlgc.com.br/sitemap.xml
