@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://mlgc.com.br/</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://mlgc.com.br/#sobre</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mlgc.com.br/projeto1.html</loc>
   </url>
+
   <url>
-    <loc>https://mlgc.com.br/#solucoes</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mlgc.com.br/projeto2.html</loc>
   </url>
+
   <url>
-    <loc>https://mlgc.com.br/#contato</loc>
-    <lastmod>2026-04-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://mlgc.com.br/projeto3.html</loc>
   </url>
+
 </urlset>
