@@ -1059,3 +1059,124 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   PROJETOS COM CARROSSEL
+   ========================================================= */
+
+.projetos-grid {
+  align-items: stretch;
+}
+
+.project-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #dfe7f3;
+  overflow: hidden;
+}
+
+.carousel-track {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(7, 22, 51, 0.72);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(11, 44, 111, 0.92);
+}
+
+.carousel-btn.prev {
+  left: 12px;
+}
+
+.carousel-btn.next {
+  right: 12px;
+}
+
+.project-card-content {
+  padding: 24px 24px 28px;
+}
+
+.project-card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.22rem;
+}
+
+.project-card-content p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--gold), var(--gold-2));
+  color: #0a1630;
+  font-weight: 800;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 10px 24px rgba(243, 198, 35, 0.24);
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(243, 198, 35, 0.3);
+}
+
+@media (max-width: 980px) {
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .project-card-content {
+    padding: 20px 20px 24px;
+  }
+}
