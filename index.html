@@ -42,34 +42,140 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "ProfilePage",
+      "@id": "https://mlgc.com.br/#profilepage",
+      "url": "https://mlgc.com.br/",
+      "name": "Marcio Carvalho | Power BI, Dados Financeiros e Controladoria",
+      "inLanguage": "pt-BR",
+      "mainEntity": {
+        "@id": "https://mlgc.com.br/#person"
+      },
+      "isPartOf": {
+        "@id": "https://mlgc.com.br/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://mlgc.com.br/#primaryimage"
+      }
+    },
+    {
       "@type": "Person",
+      "@id": "https://mlgc.com.br/#person",
       "name": "Marcio Carvalho",
       "url": "https://mlgc.com.br/",
-      "image": "https://mlgc.com.br/assets/img/og-image.jpg",
+      "image": {
+        "@id": "https://mlgc.com.br/#primaryimage"
+      },
       "jobTitle": "Especialista em Power BI, Dados e Controladoria",
+      "description": "Especialista em Power BI, dados financeiros e controladoria. Atua com dashboards, modelagem de dados, indicadores de performance e suporte à tomada de decisão.",
+      "sameAs": [
+        "https://www.linkedin.com/in/marciolgcarvalho"
+      ],
+      "knowsAbout": [
+        "Power BI",
+        "Business Intelligence",
+        "Análise de Dados",
+        "Controladoria",
+        "Dados Financeiros",
+        "Indicadores de Performance",
+        "Dashboards Executivos",
+        "Modelagem de Dados",
+        "DAX",
+        "Power Query"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "@id": "https://mlgc.com.br/#organization",
+        "name": "MLGC"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "atendimento comercial",
+          "email": "mailto:marcio@mlgc.com.br",
+          "areaServed": "BR",
+          "availableLanguage": ["pt-BR"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "WhatsApp",
+          "telephone": "+55-51-98492-6002",
+          "areaServed": "BR",
+          "availableLanguage": ["pt-BR"],
+          "url": "https://wa.me/5551984926002"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://mlgc.com.br/#organization",
+      "name": "MLGC",
+      "url": "https://mlgc.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mlgc.com.br/assets/img/og-image.jpg"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/marciolgcarvalho"
       ]
     },
     {
       "@type": "WebSite",
-      "name": "MLGC",
+      "@id": "https://mlgc.com.br/#website",
       "url": "https://mlgc.com.br/",
-      "inLanguage": "pt-BR"
+      "name": "MLGC",
+      "inLanguage": "pt-BR",
+      "publisher": {
+        "@id": "https://mlgc.com.br/#organization"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://mlgc.com.br/#primaryimage",
+      "url": "https://mlgc.com.br/assets/img/og-image.jpg",
+      "contentUrl": "https://mlgc.com.br/assets/img/og-image.jpg"
     },
     {
       "@type": "Service",
+      "@id": "https://mlgc.com.br/#service-bi",
+      "name": "Serviços de Power BI, Dados e Controladoria",
       "serviceType": "Business Intelligence e Análise de Dados",
       "provider": {
-        "@type": "Person",
-        "name": "Marcio Carvalho"
+        "@id": "https://mlgc.com.br/#person"
       },
       "areaServed": {
         "@type": "Country",
         "name": "Brasil"
       },
-      "url": "https://mlgc.com.br/",
-      "description": "Serviços de Power BI, integração de dados, indicadores, controladoria e dashboards para suporte à decisão."
+      "availableLanguage": ["pt-BR"],
+      "url": "https://mlgc.com.br/#solucoes",
+      "description": "Serviços de dashboards em Power BI, integração de dados, modelagem, indicadores financeiros, performance comercial e suporte à decisão.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Soluções em Business Intelligence",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dashboards para decisão"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Estruturação e modelagem de dados"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automação e integração de fontes"
+            }
+          }
+        ]
+      }
     }
   ]
 }
