@@ -318,31 +318,17 @@
     </section>
   </main>
 
-  <script src="/assets/js/script.js"></script>
-  <script src="/assets/js/carousel.js"></script>
-
-<button id="btn-topo" aria-label="Voltar ao topo">
-  ↑
+   <button
+  id="backToTop"
+  class="back-to-top"
+  type="button"
+  aria-label="Voltar ao topo"
+>
+  <i class="fas fa-arrow-up"></i>
 </button>
 
-<script>
-  const btnTopo = document.getElementById("btn-topo");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      btnTopo.style.display = "block";
-    } else {
-      btnTopo.style.display = "none";
-    }
-  });
-
-  btnTopo.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/carousel.js"></script>
    
 </body>
 </html>
