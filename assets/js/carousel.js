@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = carousel.querySelector(".next");
 
     let currentIndex = 0;
-    let interval;
 
     function showSlide(index) {
       images.forEach((img) => img.classList.remove("active"));
@@ -24,30 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
       showSlide(currentIndex);
     }
 
-    function startAutoPlay() {
-      interval = setInterval(nextSlide, 5000);
-    }
+    // Apenas clique do usuário
+    prevBtn.addEventListener("click", prevSlide);
+    nextBtn.addEventListener("click", nextSlide);
 
-    function stopAutoPlay() {
-      clearInterval(interval);
-    }
-
-    prevBtn.addEventListener("click", () => {
-      stopAutoPlay();
-      prevSlide();
-      startAutoPlay();
-    });
-
-    nextBtn.addEventListener("click", () => {
-      stopAutoPlay();
-      nextSlide();
-      startAutoPlay();
-    });
-
-    carousel.addEventListener("mouseenter", stopAutoPlay);
-    carousel.addEventListener("mouseleave", startAutoPlay);
-
+    // Inicializa
     showSlide(currentIndex);
-    startAutoPlay();
   });
 });
