@@ -394,6 +394,64 @@ reduzindo o tempo de análise e aumentando a confiança nas decisões.
        ========================================================= -->
   <script src="assets/js/script.js"></script>
   <script src="assets/js/carousel.js"></script>
+
+
+ <!-- =========================================================
+       imagem LIGHTBOX
+       ========================================================= -->
+   
+<div id="projectLightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" data-lightbox-close></div>
+
+  <div class="lightbox-content">
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
+  <button class="lightbox-close" data-lightbox-close>&times;</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const lightbox = document.getElementById('projectLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const triggers = document.querySelectorAll('[data-lightbox-trigger]');
+  const closeElements = document.querySelectorAll('[data-lightbox-close]');
+
+  function openLightbox(src, alt) {
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || '';
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImage.src = '';
+    document.body.style.overflow = '';
+  }
+
+  triggers.forEach(el => {
+    el.addEventListener('click', function () {
+      openLightbox(
+        el.getAttribute('data-image'),
+        el.getAttribute('data-alt')
+      );
+    });
+  });
+
+  closeElements.forEach(el => {
+    el.addEventListener('click', closeLightbox);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+
+});
+</script>
    
 </body>
 </html>
