@@ -1288,8 +1288,9 @@ footer {
 }
 
 .screen-image {
+  max-width: 900px;   /* controla o tamanho */
+  margin: 0 auto 16px; /* centraliza */
   position: relative;
-  margin-bottom: 16px;
   cursor: pointer;
   border-radius: 16px;
   overflow: hidden;
