@@ -576,6 +576,53 @@
        SCRIPT DO MENU MOBILE + BOTÃO TOPO
        ========================================================= -->
   <script src="assets/js/script.js"></script>
+
+<script>
+  const lightbox = document.getElementById('projectLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const triggers = document.querySelectorAll('[data-lightbox-trigger]');
+  const closeAreas = document.querySelectorAll('[data-lightbox-close]');
+
+  function openLightbox(src, alt) {
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || '';
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+    document.body.style.overflow = '';
+  }
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      openLightbox(
+        trigger.getAttribute('data-image'),
+        trigger.getAttribute('data-alt')
+      );
+    });
+  });
+
+  closeAreas.forEach(area => {
+    area.addEventListener('click', closeLightbox);
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeLightbox);
+  }
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      closeLightbox();
+    }
+  });
+</script>
     
 </body>
 </html>
