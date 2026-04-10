@@ -1075,3 +1075,32 @@ iframe {
     padding: 7px 10px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .hero-actions,
+  .cta-group,
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .hero-actions .btn,
+  .cta-group .btn,
+  .hero-buttons .btn,
+  .hero-actions a,
+  .cta-group a,
+  .hero-buttons a {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
