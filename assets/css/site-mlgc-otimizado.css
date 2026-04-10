@@ -980,7 +980,7 @@ iframe {
   .buttons,
   .project-hero-actions {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
   .btn,
