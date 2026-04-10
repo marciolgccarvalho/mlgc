@@ -595,15 +595,28 @@ footer {
   height: 52px;
   border: 0;
   border-radius: 50%;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  background-color: #FFC107; /* amarelo */
+  color: #000; /* seta preta */
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   transform: translateY(10px);
+
   z-index: 1002;
-  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.back-to-top:hover {
+  background-color: #e0a800; /* amarelo mais escuro */
+  transform: translateY(0) scale(1.05);
 }
 
 .back-to-top.show {
