@@ -436,14 +436,16 @@ p + p {
 }
 
 .section-sobre .btn-cv {
-  background: transparent;
-  color: #1c2b4a;
-  border: 2px solid var(--gold);
+  background: linear-gradient(180deg, var(--gold), var(--gold-2));
+  color: #0a1630;
+  border: 0;
+  box-shadow: 0 12px 28px rgba(243, 198, 35, 0.24);
 }
 
 .section-sobre .btn-cv:hover {
-  background: var(--gold);
-  color: #0b1f3a;
+  background: linear-gradient(180deg, var(--gold), var(--gold-2));
+  color: #0a1630;
+  transform: translateY(-2px);
 }
 
 .contato-wrapper {
