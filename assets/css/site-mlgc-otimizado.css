@@ -196,17 +196,16 @@ p + p {
   width: 100%;
 }
 
-.menu .cta,
-.btn.primary,
 .btn-primary,
 .project-link,
 .btn-enviar,
-.whatsapp-link {
+.whatsapp-link,
+.menu .cta {
   background: linear-gradient(180deg, var(--gold), var(--gold-2));
   color: #0a1630;
   box-shadow: 0 12px 28px rgba(243, 198, 35, 0.24);
+  border: 0;
 }
-
 .menu .cta {
   padding: 12px 22px;
   border-radius: 999px;
@@ -312,29 +311,25 @@ p + p {
   min-width: 210px;
 }
 
-.btn.primary:hover,
 .btn-primary:hover,
 .project-link:hover,
 .btn-enviar:hover,
 .whatsapp-link:hover,
+.menu .cta:hover,
 .btn-cv:hover,
-.btn.secondary:hover,
 .btn-secondary:hover {
   transform: translateY(-2px);
 }
 
-.btn.secondary,
 .btn-secondary {
   border: 1px solid rgba(255, 255, 255, 0.7);
   color: var(--white);
   background: rgba(255, 255, 255, 0.03);
 }
 
-.btn.secondary:hover,
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
 .section-sobre .sobre-content {
   display: grid;
   grid-template-columns: minmax(320px, 1.1fr) minmax(320px, 0.9fr);
