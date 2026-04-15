@@ -316,6 +316,29 @@ p + p {
   margin-top: 34px;
 }
 
+.hero-impact {
+  list-style: none;
+  padding: 0;
+  margin: 24px auto 10px;
+  max-width: 720px;
+}
+
+.hero-impact li {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-impact li::before {
+  content: "✔";
+  color: var(--gold);
+  font-weight: 700;
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+}
+
 .buttons,
 .project-hero-actions {
   display: flex;
