@@ -338,6 +338,77 @@ p + p {
   width: 20px;
   margin-left: -20px;
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 110px 20px 64px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.08;
+    margin-bottom: 18px;
+  }
+
+  .hero-text {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    max-width: 100%;
+  }
+
+  .hero-text-secondary {
+    margin-bottom: 18px;
+  }
+
+  .hero-impact,
+  .hero-list {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .hero-impact li,
+  .hero-list li {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 22px;
+    position: relative;
+  }
+
+  .hero-impact li::before,
+  .hero-list li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .hero-focus-title {
+    font-size: 1.05rem;
+    margin: 22px 0 12px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 24px;
+    font-size: 1rem;
+  }
+}
 
 .buttons,
 .project-hero-actions {
